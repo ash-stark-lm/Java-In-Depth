@@ -2,6 +2,7 @@
 public class Demo {
     public static void main(String[] args) {
         int i = 3;
+        // Traditional switch statement
         switch (i) {
             case 1:
                 System.out.println("i is 1");
@@ -16,8 +17,10 @@ public class Demo {
                 System.out.println("i is not 1, 2 or 3");
         }
 
-        // Recommeneded to use rule switch stetemtn instead oftraditioonal switch
-        // statement as it is more readable and easier to understand
+        /*
+         * Recommeneded to use rule switch stetemtn instead of traditioonal switch
+         * statement as it is more readable and easier to understand
+         */
         int b = 5;
         switch (b) {
             case 1 -> System.out.println("b is 1");
