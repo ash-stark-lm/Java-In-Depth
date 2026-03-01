@@ -36,5 +36,23 @@ public class Demo {
         num = (byte) (num * 2); // Explicitly cast the result back to byte
         System.out.println("Result after type promotion: " + num);
 
+        byte number = 42;
+        char ch = 'a';
+        short st = 1024;
+        int k = 50000;
+        float f = 5.67f;
+        double ds = 0.1234;
+
+        double result = (f * number) + (k / ch) - (ds * st);
+
+        // f * b --> float
+        // i / c --> integer
+        // d * s --> doubl
+
+        // float + integer --> float - double --> double
+
+        System.out.println((f * number) + " + " + (k / ch) + " - " + (ds * st));
+        System.out.println("result = " + result);
+
     }
 }
